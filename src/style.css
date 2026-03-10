@@ -46,13 +46,20 @@ header div a {
 }
 header img {
     margin: 0 10px 0 10px;
+    border-radius: 100%;
     width: 30px;
     height: 30px;
+    padding: 5px;
+    transition: ease-in-out 0.3s;
+    cursor: pointer;
 }
 
 /* Global hover transitions */
 #top-bar a:hover {
     text-decoration: underline;
+}
+#top-bar img:hover {
+    background: rgba( 92, 92, 92, 0.75);
 }
 
 /* Responsive design */
