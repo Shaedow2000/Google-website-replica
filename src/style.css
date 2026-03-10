@@ -59,7 +59,10 @@ header img {
     text-decoration: underline;
 }
 #top-bar img:hover {
-    background: rgba( 92, 92, 92, 0.75);
+    background: rgba( 120, 120, 120, 0.7 );
+}
+#top-bar img:active {
+    background: rgba( 70, 70, 70, 0.8 );
 }
 
 /* Responsive design */
