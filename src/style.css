@@ -8,6 +8,8 @@ body {
 }
 
 
+
+/* Styles */
 #top-bar {
     height: 60px;
     display: flex;
@@ -48,12 +50,16 @@ header img {
     height: 30px;
 }
 
+/* Global hover transitions */
+#top-bar a:hover {
+    text-decoration: underline;
+}
+
 /* Responsive design */
 @media screen and ( width <= 600px ) {
     #top-bar > a {
         display: none;
         visibility: hidden;
-        color: green;
     }
     header {
         justify-content: space-between;
