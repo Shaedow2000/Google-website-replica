@@ -54,7 +54,17 @@ header img {
     cursor: pointer;
 }
 
-/* Global hover transitions */
+#logo {
+    display: flex;
+    justify-content: center;
+    height: 40%;
+    align-items: end;
+}
+#logo img {
+    width: 272px;
+}
+
+/* Global hover/active transitions */
 #top-bar a:hover {
     text-decoration: underline;
 }
