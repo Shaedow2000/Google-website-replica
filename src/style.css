@@ -18,7 +18,7 @@ body {
     font-size: 14px;
     text-decoration: none;
     color: white; 
-    margin: 10px
+    margin: 10px;
 }
 header {
     display: flex;
@@ -32,7 +32,12 @@ header {
 header div {
     display: flex;
     align-items: center;
-    padding: 0 35px;
+}
+header .links-section {
+    padding: 0 35px 0 0;
+}
+header .imgs-section {
+    padding: 0 0 0 10px;
 }
 header div a {
     margin: 0 10px 0 10px
@@ -41,4 +46,19 @@ header img {
     margin: 0 10px 0 10px;
     width: 30px;
     height: 30px;
+}
+
+/* Responsive design */
+@media screen and ( width <= 600px ) {
+    #top-bar > a {
+        display: none;
+        visibility: hidden;
+        color: green;
+    }
+    header {
+        justify-content: space-between;
+    }
+    header .imgs-section {
+        padding: 0 0 0 35px;
+    }
 }
