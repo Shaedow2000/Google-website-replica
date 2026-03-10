@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+
+#top-bar {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    margin: 0 25px;
+}
+#top-bar a {
+    font-size: 14px;
+    text-decoration: none;
+    color: white; 
+    margin: 10px
+}
+header {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: right;
+    float: none;
+    overflow: hidden;
+}
+header div {
+    display: flex;
+    align-items: center;
+    padding: 0 35px;
+}
+header div a {
+    margin: 0 10px 0 10px
+}
+header img {
+    margin: 0 10px 0 10px;
+    width: 30px;
+    height: 30px;
+}
