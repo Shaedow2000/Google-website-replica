@@ -64,6 +64,7 @@ header img {
 #center {
     display: flex;
     justify-content: center;
+    padding-top: 20px;
 }
 
 #search {
@@ -120,6 +121,14 @@ header img {
 }
 
 /* Responsive design */
+@media screen and ( width <= 1200px ) {
+    #search {
+        width: 70vw;
+    }
+    #search div div {
+        display: none;
+    }
+}
 @media screen and ( width <= 600px ) {
     #top-bar > a {
         display: none;
