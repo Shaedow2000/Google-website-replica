@@ -64,20 +64,32 @@ header img {
 #search {
     display: flex;
     align-items: center;
-    padding: 0 25px;
-    width: 40vw;
+    justify-content: space-between;
+    padding: 0 22px;
+    width: 50vw;
     height: 65px;
     border-radius: 50px;
     background-color: darkgray;
+}
+#search textarea {
+    flex: 1 1 auto;
+    background: transparent;
+    border: none;
 }
 #search div {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 8px;
 }
 #search > svg {
     width: 20px;
     height: 20px;
+    padding: 0 5px 0 0;
+}
+#search div,
+#search div div {
+    padding: 0 5px;
 }
 #search div svg {
     width: 25px;
@@ -113,5 +125,15 @@ header img {
     }
     header .imgs-section {
         padding: 0 0 0 35px;
+    }
+    #search {
+        width: 80vw;
+    }
+    #search > svg,
+    #search div div {
+        display: none;
+    }
+    #search div {
+        padding: 0 0 0 5px;
     }
 }
