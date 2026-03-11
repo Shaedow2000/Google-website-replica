@@ -65,18 +65,31 @@ header img {
 }
 
 #search {
+    display: flex;
     width: 40vw;
     height: 65px;
     border-radius: 50px;
     background-color: darkgray;
+}
+#search div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 #search > svg {
     width: 20px;
     height: 20px;
 }
 #search div svg {
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
+}
+#search div div svg {
+    width: 20px;
+    height: 20px;
+}
+#search svg {
+    fill: lightgrey;
 }
 
 /* Global hover/active transitions */
