@@ -64,6 +64,21 @@ header img {
     width: 272px;
 }
 
+#search {
+    width: 40vw;
+    height: 65px;
+    border-radius: 50px;
+    background-color: darkgray;
+}
+#search > svg {
+    width: 20px;
+    height: 20px;
+}
+#search div svg {
+    width: 30px;
+    height: 30px;
+}
+
 /* Global hover/active transitions */
 #top-bar a:hover {
     text-decoration: underline;
