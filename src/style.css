@@ -183,6 +183,11 @@ footer a:hover {
     text-decoration: underline;
 }
 
+.span2 {
+    display: none;
+    font-size: 10px;
+}
+
 /* Global hover/active transitions */
 #top-bar a:hover {
     text-decoration: underline;
@@ -223,5 +228,16 @@ footer a:hover {
     }
     #search div {
         padding: 0 0 0 5px;
+    }
+    footer div,
+    footer span {
+        margin: 0 25px;
+    }
+    .span1 {
+        display: none;
+    }
+    .span2 {
+        display: block;
+        margin-right: 0;
     }
 }
