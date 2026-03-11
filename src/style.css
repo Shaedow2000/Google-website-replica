@@ -64,6 +64,8 @@ header img {
 #center {
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
     padding-top: 20px;
 }
 
@@ -72,6 +74,7 @@ header img {
     align-items: center;
     justify-content: space-between;
     padding: 0 22px;
+    margin-bottom: 50px;
     width: 50vw;
     height: 65px;
     border-radius: 50px;
@@ -131,6 +134,23 @@ header img {
 
 #buttons {
     display: flex;
+    gap: 30px;
+}
+#buttons a,
+#buttons button {
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 8px;
+    border: solid 1px transparent;
+    background-color: rgb( 50, 50, 50 );
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+#buttons a:hover,
+#buttons button:hover {
+    border: solid 1px white;
+    background-color: rgb( 70, 70, 70 );
 }
 
 /* Global hover/active transitions */
