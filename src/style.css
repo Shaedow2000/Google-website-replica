@@ -80,6 +80,9 @@ header img {
 #search:hover {
     background-color: grey;
 }
+#search:focus-within {
+    background-color: darkgray;
+}
 #search input {
     flex: 1 1 auto;
     height: 30px;
@@ -112,7 +115,7 @@ header img {
     cursor: pointer;
 }
 #search div div:hover {
-    border: solid 2px lightblue;
+    border: solid 2px white;
 }
 #search div svg {
     width: 25px;
