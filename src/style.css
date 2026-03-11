@@ -105,6 +105,15 @@ header img {
 #search div div {
     padding: 0 5px;
 }
+#search div div {
+    border: solid 2px lightgrey; 
+    border-radius: 50px;
+    padding: 8px;
+    cursor: pointer;
+}
+#search div div:hover {
+    border: solid 2px lightblue;
+}
 #search div svg {
     width: 25px;
     height: 25px;
