@@ -129,6 +129,10 @@ header img {
     fill: lightgrey;
 }
 
+#buttons {
+    display: flex;
+}
+
 /* Global hover/active transitions */
 #top-bar a:hover {
     text-decoration: underline;
