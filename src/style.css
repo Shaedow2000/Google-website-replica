@@ -61,6 +61,11 @@ header img {
     align-items: end;
 }
 
+#center {
+    display: flex;
+    justify-content: center;
+}
+
 #search {
     display: flex;
     align-items: center;
