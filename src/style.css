@@ -188,6 +188,10 @@ footer a:hover {
     font-size: 10px;
 }
 
+#x-mark {
+    display: none;
+}
+
 /* Global hover/active transitions */
 #top-bar a:hover {
     text-decoration: underline;
