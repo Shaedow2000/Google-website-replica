@@ -197,20 +197,40 @@ footer a:hover {
     position: absolute;
     justify-content: center;
     align-items: center;
-    background-color: rgb( 15, 15, 15 );
+    background-color: rgb( 60, 60, 60 );
     border-radius: 20px;
-    padding: 20px;
+    padding: 10px;
     top: 50px;
     right: 50px;
+    box-shadow: 10px 10px 10px rgb( 0, 0, 0 );
 }
 #apps-menu div {
-    background-color: rgb( 60, 60, 60 );
+    background-color: rgb( 15, 15, 15 );
     border-radius: 15px;
 }
 #apps-menu div a {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    row-gap: 10px;
+}
+#apps-menu div a:hover,
+#apps-menu div img:hover {
+    text-decoration: none;
+    background: none;
+}
+#apps-menu div img {
+    width: 35px;
+    height: 35px;
+}
+#apps-menu div a {
+    border-radius: 10px;
+    padding: 6px;
+    transition: ease-in-out 0.3s;
+}
+#apps-menu div a:hover {
+    background: rgba( 120, 120, 120, 0.7 );
 }
 
 /* Global hover/active transitions */
