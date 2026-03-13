@@ -36,12 +36,15 @@ input.addEventListener( 'keyup', ( e ) => {
     }
 } );
 
-search_button.addEventListener( 'click', () => {
+function search() {
     let search_query = input.value;
     search_query = search_query.replaceAll( ' ', '+' );
 
     location.href = `${ google_search }${ search_query }`;
-} );
+}
+
+search_button.addEventListener( 'click', search );
+
 
 apps_button.addEventListener( 'click', () => {
     apps_menu.classList.toggle( 'hide' );
