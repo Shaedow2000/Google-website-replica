@@ -17,6 +17,15 @@ const ai_mode_button = document.getElementById( 'ai-mode' );
 
 const google_search = 'https://www.google.com/search?q=';
 
+function search() {
+    let search_query = input.value;
+    search_query = search_query.replaceAll( ' ', '+' );
+
+    if ( search_query.replaceAll( '+', '' ) !== '' ) {
+        location.href = `${ google_search }${ search_query }`;
+    }
+}
+
 input.addEventListener( 'keyup', ( e ) => {
     const value = input.value;
 
@@ -29,22 +38,9 @@ input.addEventListener( 'keyup', ( e ) => {
     }
 
     if ( value !== '' && e.key === 'Enter' ) {
-        let search_query = input.value;
-
-        search_query = search_query.replaceAll( ' ', '+' );
-
-        location.href = `${ google_search }${ search_query }` 
+        search(); 
     }
 } );
-
-function search() {
-    let search_query = input.value;
-    search_query = search_query.replaceAll( ' ', '+' );
-
-    if ( search_query.replaceAll( '+', '' ) !== '' ) {
-        location.href = `${ google_search }${ search_query }`;
-    }
-}
 
 search_button.addEventListener( 'click', search );
 small_search_button.addEventListener( 'click', search );
