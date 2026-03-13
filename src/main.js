@@ -6,9 +6,12 @@ const xmark = document.getElementById( 'x-mark' );
 const search_button = document.getElementById( 'search-button' );
 
 const apps_button = document.getElementById( 'apps' );
-const apps_menu = document.getElementById( 'apps-menu' )
+const apps_menu = document.getElementById( 'apps-menu' );
 
-const google_search = 'https://www.google.com/search?q='
+const account_button = document.getElementById( 'account' );
+const account_menu = document.getElementById( 'account-menu' );
+
+const google_search = 'https://www.google.com/search?q=';
 
 input.addEventListener( 'keyup', ( e ) => {
     const value = input.value;
@@ -39,4 +42,8 @@ search_button.addEventListener( 'click', () => {
 
 apps_button.addEventListener( 'click', () => {
     apps_menu.classList.toggle( 'hide' );
+} );
+
+account_button.addEventListener( 'click', () => {
+    account_menu.classList.toggle( 'hide' );
 } );

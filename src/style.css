@@ -211,6 +211,9 @@ footer a:hover {
 }
 #account-menu div {
     padding: 25px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
 }
 #apps-menu div a {
     display: flex;
