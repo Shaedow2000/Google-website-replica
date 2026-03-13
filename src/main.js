@@ -5,6 +5,9 @@ const xmark = document.getElementById( 'x-mark' );
 
 const search_button = document.getElementById( 'search-button' );
 
+const apps_button = document.getElementById( 'apps' );
+const apps_menu = document.getElementById( 'apps-menu' )
+
 const google_search = 'https://www.google.com/search?q='
 
 input.addEventListener( 'keyup', ( e ) => {
@@ -32,4 +35,8 @@ search_button.addEventListener( 'click', () => {
     search_query = search_query.replaceAll( ' ', '+' );
 
     location.href = `${ google_search }${ search_query }`;
+} );
+
+apps_button.addEventListener( 'click', () => {
+    apps_menu.classList.toggle( 'hide' );
 } );

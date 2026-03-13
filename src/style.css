@@ -193,7 +193,6 @@ footer a:hover {
 }
 
 #apps-menu {
-    display: flex;
     position: absolute;
     justify-content: center;
     align-items: center;
@@ -242,6 +241,11 @@ footer a:hover {
 }
 #top-bar img:active {
     background: rgba( 70, 70, 70, 0.8 );
+}
+
+/* Classes */
+.hide {
+    display: none;
 }
 
 /* Responsive design */
