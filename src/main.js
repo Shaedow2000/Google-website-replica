@@ -11,6 +11,7 @@ const apps_menu = document.getElementById( 'apps-menu' );
 const account_button = document.getElementById( 'account' );
 const account_menu = document.getElementById( 'account-menu' );
 
+const lens = document.getElementById( 'lens' );
 const ai_mode_button = document.getElementById( 'ai-mode' );
 
 const google_search = 'https://www.google.com/search?q=';
@@ -48,6 +49,10 @@ apps_button.addEventListener( 'click', () => {
 
 account_button.addEventListener( 'click', () => {
     account_menu.classList.toggle( 'hide' );
+} );
+
+lens.addEventListener( 'click', () => {
+    location.href = `https://lens.google.com/`;
 } );
 
 ai_mode_button.addEventListener( 'click', () => {

@@ -131,6 +131,9 @@ header img {
 #search svg {
     fill: lightgrey;
 }
+#two-icons svg {
+    cursor: pointer;
+}
 
 #buttons {
     display: flex;
