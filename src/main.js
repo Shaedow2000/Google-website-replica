@@ -4,6 +4,7 @@ const iconsDiv = document.getElementById( 'two-icons' );
 const xmark = document.getElementById( 'x-mark' );
 
 const search_button = document.getElementById( 'search-button' );
+const small_search_button = document.getElementById( 'mini-search-button' );
 
 const apps_button = document.getElementById( 'apps' );
 const apps_menu = document.getElementById( 'apps-menu' );
@@ -40,11 +41,13 @@ function search() {
     let search_query = input.value;
     search_query = search_query.replaceAll( ' ', '+' );
 
-    location.href = `${ google_search }${ search_query }`;
+    if ( search_query.replaceAll( '+', '' ) !== '' ) {
+        location.href = `${ google_search }${ search_query }`;
+    }
 }
 
 search_button.addEventListener( 'click', search );
-
+small_search_button.addEventListener( 'click', search );
 
 apps_button.addEventListener( 'click', () => {
     apps_menu.classList.toggle( 'hide' );
