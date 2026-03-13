@@ -11,6 +11,8 @@ const apps_menu = document.getElementById( 'apps-menu' );
 const account_button = document.getElementById( 'account' );
 const account_menu = document.getElementById( 'account-menu' );
 
+const ai_mode_button = document.getElementById( 'ai-mode' );
+
 const google_search = 'https://www.google.com/search?q=';
 
 input.addEventListener( 'keyup', ( e ) => {
@@ -46,4 +48,8 @@ apps_button.addEventListener( 'click', () => {
 
 account_button.addEventListener( 'click', () => {
     account_menu.classList.toggle( 'hide' );
+} );
+
+ai_mode_button.addEventListener( 'click', () => {
+    location.href = `https://gemini.google.com/`;
 } );
