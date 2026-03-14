@@ -26,7 +26,7 @@ function search() {
     }
 }
 
-input.addEventListener( 'keyup', ( e ) => {
+function check_input( e ) {
     const value = input.value;
 
     if ( value === '' ) {
@@ -34,12 +34,16 @@ input.addEventListener( 'keyup', ( e ) => {
         xmark.style.display = 'none';
     } else {
         iconsDiv.style.display = 'none';
-        xmark.style.display = 'block';
+        xmark.style.display =  'block';    
     }
 
     if ( value !== '' && e.key === 'Enter' ) {
-        search(); 
+        search();
     }
+}
+
+input.addEventListener( 'keyup', ( e ) => {
+    check_input( e ); 
 } );
 
 search_button.addEventListener( 'click', search );
@@ -61,4 +65,10 @@ lens.addEventListener( 'click', () => {
 
 ai_mode_button.addEventListener( 'click', () => {
     location.href = `https://gemini.google.com/`;
+} );
+
+xmark.addEventListener( 'click', ( e ) => {
+    input.value = '';
+
+    check_input( e )
 } );
