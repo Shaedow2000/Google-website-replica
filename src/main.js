@@ -47,10 +47,12 @@ small_search_button.addEventListener( 'click', search );
 
 apps_button.addEventListener( 'click', () => {
     apps_menu.classList.toggle( 'hide' );
+    account_menu.classList.add( 'hide' )
 } );
 
 account_button.addEventListener( 'click', () => {
     account_menu.classList.toggle( 'hide' );
+    apps_menu.classList.add( 'hide' );
 } );
 
 lens.addEventListener( 'click', () => {
