@@ -1,304 +1,302 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 body {
-    width: 100vw;
-    height: 100vh;
+  width: 100vw;
+  height: 100vh;
 }
-
-
 
 /* Styles */
 #top-bar {
-    height: 60px;
-    display: flex;
-    align-items: center;
-    margin: 0 25px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  margin: 0 25px;
 }
 #top-bar a {
-    font-size: 14px;
-    text-decoration: none;
-    color: white; 
-    margin: 10px;
+  font-size: 14px;
+  text-decoration: none;
+  color: white;
+  margin: 10px;
 }
 header {
-    display: flex;
-    height: 100%;
-    width: 100%;
-    align-items: center;
-    justify-content: right;
-    float: none;
-    overflow: hidden;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: right;
+  float: none;
+  overflow: hidden;
 }
 header div {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 header .links-section {
-    padding: 0 35px 0 0;
+  padding: 0 35px 0 0;
 }
 header .menus-section {
-    padding: 0 0 0 10px;
+  padding: 0 0 0 10px;
 }
 header div a {
-    margin: 0 10px 0 10px
+  margin: 0 10px 0 10px;
 }
 header img {
-    margin: 0 10px 0 10px;
-    border-radius: 100%;
-    width: 30px;
-    height: 30px;
-    padding: 5px;
-    transition: ease-in-out 0.3s;
-    cursor: pointer;
+  margin: 0 10px 0 10px;
+  border-radius: 100%;
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+  transition: ease-in-out 0.3s;
+  cursor: pointer;
 }
 
 #logo {
-    display: flex;
-    justify-content: center;
-    height: 30%;
-    align-items: end;
+  display: flex;
+  justify-content: center;
+  height: 30%;
+  align-items: end;
 }
 
 #center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 20px;
 }
 
 #search {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 22px;
-    margin-bottom: 50px;
-    width: 50vw;
-    height: 65px;
-    border-radius: 50px;
-    background-color: darkgray;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 22px;
+  margin-bottom: 50px;
+  width: 50vw;
+  height: 65px;
+  border-radius: 50px;
+  background-color: darkgray;
 }
 #search:hover {
-    background-color: grey;
+  background-color: grey;
 }
 #search:focus-within {
-    background-color: darkgray;
+  background-color: darkgray;
 }
 #search input {
-    flex: 1 1 auto;
-    height: 30px;
-    font-size: 16px;
-    background: transparent;
-    border: none;
+  flex: 1 1 auto;
+  height: 30px;
+  font-size: 16px;
+  background: transparent;
+  border: none;
 }
 #search input:focus {
-    outline: none; 
+  outline: none;
 }
 #search div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
 }
 #search > svg {
-    width: 20px;
-    height: 20px;
-    padding: 0 5px 0 0;
+  width: 20px;
+  height: 20px;
+  padding: 0 5px 0 0;
 }
 #search div,
 #search div div {
-    padding: 0 5px;
+  padding: 0 5px;
 }
 #search div div {
-    border: solid 2px lightgrey; 
-    border-radius: 50px;
-    padding: 8px;
-    cursor: pointer;
+  border: solid 2px lightgrey;
+  border-radius: 50px;
+  padding: 8px;
+  cursor: pointer;
 }
 #search div div:hover {
-    border: solid 2px white;
+  border: solid 2px white;
 }
 #search div svg {
-    width: 25px;
-    height: 25px;
+  width: 25px;
+  height: 25px;
 }
 #search div div svg {
-    width: 20px;
-    height: 20px;
+  width: 20px;
+  height: 20px;
 }
 #search svg {
-    fill: lightgrey;
+  fill: lightgrey;
 }
 #two-icons svg {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 #buttons {
-    display: flex;
-    gap: 30px;
+  display: flex;
+  gap: 30px;
 }
 #buttons a,
 #buttons button {
-    padding: 10px;
-    font-size: 15px;
-    border-radius: 8px;
-    border: solid 1px transparent;
-    background-color: rgb( 50, 50, 50 );
-    text-decoration: none;
-    color: white;
-    cursor: pointer;
+  padding: 10px;
+  font-size: 15px;
+  border-radius: 8px;
+  border: solid 1px transparent;
+  background-color: rgb(50, 50, 50);
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
 }
 #buttons a:hover,
 #buttons button:hover {
-    border: solid 1px white;
-    background-color: rgb( 70, 70, 70 );
+  border: solid 1px white;
+  background-color: rgb(70, 70, 70);
 }
 
 footer {
-    display: flex;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 60px;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  align-items: center;
+  justify-content: space-between;
 }
 footer div,
 footer span {
-    margin: 0 35px;
+  margin: 0 35px;
 }
 footer div {
-    display: flex;
-    gap: 20px;
+  display: flex;
+  gap: 20px;
 }
 footer span {
-    color: grey;
-    font-size: 12px;
+  color: grey;
+  font-size: 12px;
 }
 footer a {
-    color: white;
-    font-size: 14px;
-    text-decoration: none;
+  color: white;
+  font-size: 14px;
+  text-decoration: none;
 }
 footer a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .span2 {
-    display: none;
-    font-size: 10px;
+  display: none;
+  font-size: 10px;
 }
 
 #x-mark {
-    display: none;
-    cursor: pointer;
+  display: none;
+  cursor: pointer;
 }
 
 #apps-menu,
 #account-menu {
-    position: absolute;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb( 60, 60, 60 );
-    border-radius: 20px;
-    padding: 10px;
-    top: 60px;
-    right: 40px;
-    box-shadow: 10px 10px 10px rgb( 0, 0, 0 );
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(60, 60, 60);
+  border-radius: 20px;
+  padding: 10px;
+  top: 60px;
+  right: 40px;
+  box-shadow: 10px 10px 10px rgb(0, 0, 0);
 }
 #apps-menu div,
 #account-menu div {
-    background-color: rgb( 15, 15, 15 );
-    border-radius: 15px;
+  background-color: rgb(15, 15, 15);
+  border-radius: 15px;
 }
 #account-menu div {
-    padding: 25px;
-    display: flex;
-    flex-direction: column;
-    row-gap: 10px;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
 }
 #apps-menu div a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    row-gap: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 10px;
 }
 #apps-menu div a:hover,
 #apps-menu div img:hover {
-    text-decoration: none;
-    background: none;
+  text-decoration: none;
+  background: none;
 }
 #apps-menu div img {
-    width: 35px;
-    height: 35px;
+  width: 35px;
+  height: 35px;
 }
 #apps-menu div a {
-    border-radius: 10px;
-    padding: 6px;
-    transition: ease-in-out 0.3s;
+  border-radius: 10px;
+  padding: 6px;
+  transition: ease-in-out 0.3s;
 }
 #apps-menu div a:hover {
-    background: rgba( 120, 120, 120, 0.7 );
+  background: rgba(120, 120, 120, 0.7);
 }
 
 /* Global hover/active transitions */
 #top-bar a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 #top-bar img:hover {
-    background: rgba( 120, 120, 120, 0.7 );
+  background: rgba(120, 120, 120, 0.7);
 }
 #top-bar img:active {
-    background: rgba( 70, 70, 70, 0.8 );
+  background: rgba(70, 70, 70, 0.8);
 }
 
 /* Classes */
 .hide {
-    display: none;
+  display: none;
 }
 
 /* Responsive design */
-@media screen and ( width <= 1200px ) {
-    #search {
-        width: 70vw;
-    }
-    #search div div {
-        display: none;
-    }
+@media screen and (width <= 1200px) {
+  #search {
+    width: 70vw;
+  }
+  #search div div {
+    display: none;
+  }
 }
-@media screen and ( width <= 600px ) {
-    #top-bar > a {
-        display: none;
-        visibility: hidden;
-    }
-    header {
-        justify-content: space-between;
-    }
-    header .menus-section {
-        padding: 0 0 0 35px;
-    }
-    #search {
-        width: 80vw;
-    }
-    #search > svg,
-    #search div div {
-        display: none;
-    }
-    #search div {
-        padding: 0 0 0 5px;
-    }
-    footer div,
-    footer span {
-        margin: 0 25px;
-    }
-    .span1 {
-        display: none;
-    }
-    .span2 {
-        display: block;
-        margin-right: 0;
-    }
+@media screen and (width <= 600px) {
+  #top-bar > a {
+    display: none;
+    visibility: hidden;
+  }
+  header {
+    justify-content: space-between;
+  }
+  header .menus-section {
+    padding: 0 0 0 35px;
+  }
+  #search {
+    width: 80vw;
+  }
+  #search > svg,
+  #search div div {
+    display: none;
+  }
+  #search div {
+    padding: 0 0 0 5px;
+  }
+  footer div,
+  footer span {
+    margin: 0 25px;
+  }
+  .span1 {
+    display: none;
+  }
+  .span2 {
+    display: block;
+    margin-right: 0;
+  }
 }
